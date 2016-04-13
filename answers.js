@@ -202,3 +202,24 @@ function arraySum(array) {
 }
 
 console.log(arraySum([21, 76, 91]));
+
+// Write a function that takes two arrays, and returns an array of all elements that are only in one array. 
+// For example, with [1,2,3] and [1,2,4,5] the function should return [3,4,5]. 
+// Test your function on different inputs. Hint: you should look up array methods indexOf and slice.
+
+function singleElements(array1, array2) {
+    var newArray = [];
+    array1.forEach(function(num) {
+        if (array2.indexOf(num) === -1) {
+            newArray.push(num);
+        }
+    });
+    array2.forEach(function(num) {
+        if (array1.indexOf(num) === -1) {
+            newArray.push(num);
+        }
+    });
+    return newArray;
+}
+
+console.log(singleElements([1,3,4,5], [1,2,4,6]));
