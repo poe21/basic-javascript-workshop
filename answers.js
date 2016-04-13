@@ -120,3 +120,22 @@ function factorial(number) {
 console.log(factorial(5));
 console.log(factorial(10));
 console.log(factorial(-5)); // returns undefined
+
+// Write a function that takes a phrase as a string, and returns the longest word in that phrase. 
+// If the phrase contains more than one such word, return the first occurrence. 
+// Test your function on a few inputs.
+
+function findLongestWord(phrase) {
+    var wordsArray = phrase.split(" ");
+    var isLonger = 0;
+    var longestWord;
+    for (var i = 0; i < wordsArray.length; i++) {
+        if (isLonger < wordsArray[i].length) {
+            isLonger = wordsArray[i].length;
+            longestWord = wordsArray[i];
+        } 
+    }
+    return longestWord;
+}
+
+console.log(findLongestWord("This is a phrase tomato potato"));
