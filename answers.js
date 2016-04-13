@@ -48,3 +48,14 @@ function add(number1, number2) {
 console.log(add(21, 37));
 console.log(add("Hello","World")); // joins words together
 console.log(add(false, "CAT")); // actually joins any value together
+
+// Write a function that takes two numbers and multiplies them together. Test your function on a few inputs. 
+// Write in your comments what happens when you pass something other than a number to your function.
+
+function multiply(number1, number2) {
+    return number1 * number2;
+}
+
+console.log(multiply(21, 37));
+console.log(multiply(2, 6));
+console.log(multiply("Cats", "are great")); // prints Not a Number
