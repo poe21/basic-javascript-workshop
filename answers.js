@@ -94,3 +94,15 @@ function stringRepeat(string, repeatNumber) {
 console.log(stringRepeat("Ha", 20));
 console.log(stringRepeat("Cats ", 30));
 console.log(stringRepeat("Dogs", 0));
+
+// Write a function that takes a string, and returns the reverse of that string. 
+// For example, if you pass the function the string “hello”, it should return “olleh”. 
+// Test your function on a few inputs, including the empty string.
+
+function reverseString(string) {
+    return string.split("").reverse().join("");
+}
+
+console.log(reverseString("Potato"));
+console.log(reverseString("otirruB"));
+console.log(reverseString("")); // returns nothing
