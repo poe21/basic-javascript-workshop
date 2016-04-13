@@ -190,3 +190,15 @@ function filteredTruthyArray(array) {
 }
 
 console.log(filteredTruthyArray([21, 0, "Cat", false, "", 83]));
+
+// Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.
+
+function arraySum(array) {
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    return sum;
+}
+
+console.log(arraySum([21, 76, 91]));
