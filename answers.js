@@ -106,3 +106,17 @@ function reverseString(string) {
 console.log(reverseString("Potato"));
 console.log(reverseString("otirruB"));
 console.log(reverseString("")); // returns nothing
+
+// Write a function that takes a number and returns the factorial of a number. The factorial of 5 is 5x4x3x2x1.
+// The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.
+
+function factorial(number) {
+    for (var i = (number - 1); i > 0; i--) {
+        var total = (number *= i);
+    }
+    return total;
+}
+
+console.log(factorial(5));
+console.log(factorial(10));
+console.log(factorial(-5)); // returns undefined
