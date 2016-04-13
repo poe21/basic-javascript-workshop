@@ -59,3 +59,27 @@ function multiply(number1, number2) {
 console.log(multiply(21, 37));
 console.log(multiply(2, 6));
 console.log(multiply("Cats", "are great")); // prints Not a Number
+
+// Write a function that takes two numbers and a string. If the string is ‘add’, then return the sum of the numbers. 
+// If the string is ‘subtract’, return the difference. If the string is ‘mult’, return the product. 
+// If the string is ‘div’, return the ratio. Otherwise return 0.
+
+function operationChoice(number1, number2, string) {
+    if (string === "add") {
+        return number1 + number2;
+    } else if (string === "subtract") {
+        return number1 - number2;
+    } else if (string === "mult") {
+        return number1 * number2;
+    } else if (string === "div") {
+        return number1 / number2;
+    } else {
+        return 0;
+    }
+}
+
+console.log(operationChoice(54, 33, "subtract"));
+console.log(operationChoice(54, 33, "add"));
+console.log(operationChoice(54, 33, "mult"));
+console.log(operationChoice(54, 33, "div"));
+console.log(operationChoice(54, 33, "cat"));
