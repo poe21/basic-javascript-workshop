@@ -15,3 +15,13 @@ function firstCharacterAlternate(str) {
 }
 
 console.log(firstCharacterAlternate("Annie"));
+
+// Write a function that takes a string and returns the last character of a string.
+// Test your function on a few inputs, including the empty string.
+
+function lastCharacter(string) {
+    return string.substr((string.length-1), (string.length));
+}
+
+console.log(lastCharacter("computer"));
+console.log(lastCharacter(""));
