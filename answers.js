@@ -159,3 +159,20 @@ function capitalized(phrase) {
 console.log(capitalized("THIS is a tEsT"));
 console.log(capitalized("cat"));
 console.log(capitalized("HELLO"));
+
+// Write a function that takes an array and returns the largest number of the array. 
+// Test your function on a few inputs.
+
+function findLargestNumber(array) {
+    var largestNumber = 0;
+    for (var i = 0; i < array.length; i++) {
+        if (largestNumber < array[i]) {
+            largestNumber = array[i];
+        }
+    }
+    return largestNumber;
+}
+
+console.log(findLargestNumber([12,21,43]));
+console.log(findLargestNumber([547,1033,473]));
+console.log(findLargestNumber([-17,56,21]));
