@@ -36,3 +36,15 @@ function specificCharacter(string, position) {
 }
 
 console.log(specificCharacter("Word", 3));
+console.log(specificCharacter("", 3));
+
+// Write a function that takes two numbers and adds them together. Test your function on a few inputs. 
+// Write in the comments what happens when you pass something other than a number to your function.
+
+function add(number1, number2) {
+    return number1 + number2;
+}
+
+console.log(add(21, 37));
+console.log(add("Hello","World")); // joins words together
+console.log(add(false, "CAT")); // actually joins any value together
