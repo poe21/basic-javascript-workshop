@@ -83,3 +83,14 @@ console.log(operationChoice(54, 33, "add"));
 console.log(operationChoice(54, 33, "mult"));
 console.log(operationChoice(54, 33, "div"));
 console.log(operationChoice(54, 33, "cat"));
+
+// Write a function that takes a string and a number, and returns the string repeated that many number of times. 
+// Test your function with various inputs.
+
+function stringRepeat(string, repeatNumber) {
+    return string.repeat(repeatNumber);
+}
+
+console.log(stringRepeat("Ha", 20));
+console.log(stringRepeat("Cats ", 30));
+console.log(stringRepeat("Dogs", 0));
