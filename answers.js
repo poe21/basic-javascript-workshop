@@ -25,3 +25,14 @@ function lastCharacter(string) {
 
 console.log(lastCharacter("computer"));
 console.log(lastCharacter(""));
+
+/* Write a function that takes a string and a number, and returns the character at the position 
+represented by the number. The indexing of number should start at 0. 
+Test your function on a few inputs, including the empty string.
+*/
+
+function specificCharacter(string, position) {
+    return string.charAt(position);
+}
+
+console.log(specificCharacter("Word", 3));
