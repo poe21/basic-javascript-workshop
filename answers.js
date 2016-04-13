@@ -176,3 +176,17 @@ function findLargestNumber(array) {
 console.log(findLargestNumber([12,21,43]));
 console.log(findLargestNumber([547,1033,473]));
 console.log(findLargestNumber([-17,56,21]));
+
+// Write a function that takes an array, and returns a filtered array. 
+// The filtered array should only contain the truthy values from the initial array. 
+// Hint: there is an array method called filter that can help you with this :)
+
+function filteredTruthyArray(array) {
+    return array.filter(function(value) {
+        if (value) {
+            return value;
+        }
+    });
+}
+
+console.log(filteredTruthyArray([21, 0, "Cat", false, "", 83]));
