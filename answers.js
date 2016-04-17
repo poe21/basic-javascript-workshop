@@ -125,20 +125,33 @@ console.log(factorial(-5)); // returns undefined
 // If the phrase contains more than one such word, return the first occurrence. 
 // Test your function on a few inputs.
 
-function findLongestWord(phrase) {
+ function findLongestWord(phrase) {
     var wordsArray = phrase.split(" ");
-    var isLonger = 0;
-    var longestWord;
+    var longestWord = "";
     for (var i = 0; i < wordsArray.length; i++) {
-        if (isLonger < wordsArray[i].length) {
-            isLonger = wordsArray[i].length;
+        if (longestWord.length < wordsArray[i].length) {
             longestWord = wordsArray[i];
         } 
     }
     return longestWord;
 }
 
-console.log(findLongestWord("This is a phrase tomato potato"));
+console.log(findLongestWord("This is a tomato potato"));
+
+
+//forEach version
+function findLongestWord2(phrase) {
+    var longestWord = "";
+    var phraseArray = phrase.split(" ");
+    phraseArray.forEach(function(word) {
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    });
+    return longestWord;
+}
+
+console.log(findLongestWord2("This is a phrase tomato potato"));
 
 // Write a function that takes a phrase, and returns the same phrase with every word capitalized. 
 // For example, if you pass your function "hello world", it should return "Hello World" 
