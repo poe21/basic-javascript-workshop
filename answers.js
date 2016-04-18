@@ -111,15 +111,19 @@ console.log(reverseString("")); // returns nothing
 // The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.
 
 function factorial(number) {
-    for (var i = (number - 1); i > 0; i--) {
-        var total = (number *= i);
+    if (number === 0) {
+        return 1;
     }
-    return total;
+    for (var i = (number - 1); i > 0; i--) {
+        number *= i;
+    }
+    return number;
 }
 
 console.log(factorial(5));
+console.log(factorial(0));
 console.log(factorial(10));
-console.log(factorial(-5)); // returns undefined
+console.log(factorial(-5)); 
 
 // Write a function that takes a phrase as a string, and returns the longest word in that phrase. 
 // If the phrase contains more than one such word, return the first occurrence. 
